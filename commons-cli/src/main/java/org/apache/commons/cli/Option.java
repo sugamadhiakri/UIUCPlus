@@ -144,7 +144,7 @@ public class Option implements Cloneable, Serializable {
          * @return this builder, to allow method chaining
          */
         public Builder hasArg(final boolean hasArg) {
-            if(hasArg) {
+            if (hasArg) {
                 argCount = 1;
             }
             return this;
