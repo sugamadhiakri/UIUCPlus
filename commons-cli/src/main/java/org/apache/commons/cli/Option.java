@@ -696,8 +696,9 @@ public class Option implements Cloneable, Serializable {
     /**
      * @return whether this Option can have an optional argument
      */
-        public boolean hasOptionalArg() {
-    return this.optionalArg;    }
+    public boolean hasOptionalArg() {
+        return this.optionalArg;
+    }
 
     /**
      * Return whether this Option has specified a value separator.
