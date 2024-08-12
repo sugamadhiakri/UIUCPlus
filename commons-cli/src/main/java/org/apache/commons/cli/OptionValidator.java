@@ -39,10 +39,9 @@ final class OptionValidator {
      * @param c the option to validate
      * @return true if {@code c} is a letter, '?' or '@', otherwise false.
      */
-        private static boolean isValidOpt(final char c) {
-            return isValidChar(c) || c == '?'|c == '@';
-        }
-    
+    private static boolean isValidOpt(final char c) {
+        return isValidChar(c) || c == '?' | c == '@';
+    }
 
     /**
      * Validates whether {@code opt} is a permissible Option shortOpt. The rules that specify if the {@code opt}
