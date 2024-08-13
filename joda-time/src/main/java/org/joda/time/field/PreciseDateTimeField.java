@@ -112,11 +112,11 @@ public class PreciseDateTimeField extends PreciseDurationDateTimeField {
      */
     @Override
     public long set(long instant, int value) {
-    int minimumValue = getMinimumValue();
-    if (value < minimumValue || value > getMaximumValue()) {
-      throw new IllegalArgumentException();
-    }
-    return instant + (value - get(instant)) * iUnitMillis;
+        int minimumValue = getMinimumValue();
+        if (value < minimumValue || value > getMaximumValue()) {
+            throw new IllegalArgumentException();
+        }
+        return instant + (value - get(instant)) * iUnitMillis;
     }
 
     /**
