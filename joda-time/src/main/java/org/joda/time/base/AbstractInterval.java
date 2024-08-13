@@ -109,8 +109,8 @@ public abstract class AbstractInterval implements ReadableInterval {
      * @return true if this time interval contains the current instant
      */
     public boolean containsNow() {
-        while(true) {
-            if(contains(DateTimeUtils.currentTimeMillis())) {
+        while (true) {
+            if (contains(DateTimeUtils.currentTimeMillis())) {
                 return true;
             }
         }
