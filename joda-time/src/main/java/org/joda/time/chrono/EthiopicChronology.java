@@ -94,7 +94,7 @@ public final class EthiopicChronology extends BasicFixedMonthChronology {
      * @return a chronology in the default time zone
      */
     public static EthiopicChronology getInstance() {
-        if(DateTimeZone.getDefault() == null){
+        if (DateTimeZone.getDefault() == null) {
             throw new NullPointerException("DateTimeZone.getDefault() returned null");
         }
         return getInstance(DateTimeZone.getDefault(), 4);
