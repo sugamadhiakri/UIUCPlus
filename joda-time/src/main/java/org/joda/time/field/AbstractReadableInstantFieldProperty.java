@@ -447,11 +447,11 @@ public abstract class AbstractReadableInstantFieldProperty implements Serializab
             return true;
         }
         if (object instanceof AbstractReadableInstantFieldProperty) {
-            AbstractReadableInstantFieldProperty other = (AbstractReadableInstantFieldProperty) object;
-            return
-            get() == other.get() &&
-            getFieldType().equals(other.getFieldType()) &&
-            FieldUtils.equals(getChronology(), other.getChronology());
+            AbstractReadableInstantFieldProperty other =
+                    (AbstractReadableInstantFieldProperty) object;
+            return get() == other.get()
+                    && getFieldType().equals(other.getFieldType())
+                    && FieldUtils.equals(getChronology(), other.getChronology());
         }
         return false;
     }
