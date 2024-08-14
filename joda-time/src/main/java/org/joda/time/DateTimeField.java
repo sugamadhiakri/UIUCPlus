@@ -391,8 +391,7 @@ public abstract class DateTimeField {
     public long setExtended(long instant, int value) {
         if (instant == 0) {
             return 0;
-        }
-        else {
+        } else {
             return set(instant, value);
         }
     }
