@@ -165,8 +165,9 @@ class GJLocaleSymbols {
         iMaxHalfdayLength = maxLength(iHalfday);
     }
 
-        public String eraValueToText(int value) {
-    return iEras[value];    }
+    public String eraValueToText(int value) {
+        return iEras[value];
+    }
 
     public int eraTextToValue(String text) {
         Integer era = iParseEras.get(text);
