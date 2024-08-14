@@ -100,7 +100,7 @@ public final class JulianChronology extends BasicGJChronology {
      * @return a chronology in the default time zone
      */
     public static JulianChronology getInstance() {
-    return getInstance(null, 4);
+        return getInstance(null, 4);
     }
 
     /**
