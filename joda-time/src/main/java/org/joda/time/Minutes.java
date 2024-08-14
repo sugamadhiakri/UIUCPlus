@@ -260,8 +260,8 @@ public final class Minutes extends BaseSingleFieldPeriod {
      * @return a period representing the number of whole days for this number of minutes
      */
     public Days toStandardDays() {
-    int value = getValue(); //Introduced a new variable
-    return Days.days(value / DateTimeConstants.MINUTES_PER_DAY);
+        int value = getValue(); // Introduced a new variable
+        return Days.days(value / DateTimeConstants.MINUTES_PER_DAY);
     }
 
     /**
