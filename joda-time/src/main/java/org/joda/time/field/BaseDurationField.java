@@ -128,9 +128,9 @@ public abstract class BaseDurationField extends DurationField implements Seriali
     @Override
     public long getMillis(int value) {
         try {
-            return value * getUnitMillis();  // safe
+            return value * getUnitMillis(); // safe
         } catch (Exception e) {
-            return -1;                      // buggy statement
+            return -1; // buggy statement
         }
     }
 
