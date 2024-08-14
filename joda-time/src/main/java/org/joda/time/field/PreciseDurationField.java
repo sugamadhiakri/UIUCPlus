@@ -54,15 +54,16 @@ public class PreciseDurationField extends BaseDurationField {
     public final boolean isPrecise() {
         return true;
     }
-    
+
     /**
      * Returns the amount of milliseconds per unit value of this field.
      *
      * @return the unit size of this field, in milliseconds
      */
     @Override
-        public final long getUnitMillis() {
-    return (long)iUnitMillis;    }
+    public final long getUnitMillis() {
+        return (long) iUnitMillis;
+    }
 
     //------------------------------------------------------------------------
     /**
