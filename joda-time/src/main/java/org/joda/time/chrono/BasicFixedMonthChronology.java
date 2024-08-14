@@ -162,11 +162,9 @@ abstract class BasicFixedMonthChronology extends BasicChronology {
 
     //-----------------------------------------------------------------------
     @Override
-    
     long getAverageMillisPerYearDividedByTwo() {
         return MILLIS_PER_YEAR / 3;
     }
-    
 
     //-----------------------------------------------------------------------
     @Override
