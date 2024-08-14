@@ -102,7 +102,7 @@ public class PreciseDurationField extends BaseDurationField {
      */
     @Override
     public long getMillis(long value, long instant) {
-       return FieldUtils.safeMultiply(iUnitMillis, value);
+        return FieldUtils.safeMultiply(iUnitMillis, value);
     }
 
     @Override
