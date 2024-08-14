@@ -118,9 +118,10 @@ public class PreciseDurationField extends BaseDurationField {
     }
 
     @Override
-            public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
-                long difference = FieldUtils.safeSubtract(minuendInstant, subtrahendInstant);
-        return (difference / iUnitMillis);    }
+    public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+        long difference = FieldUtils.safeSubtract(minuendInstant, subtrahendInstant);
+        return (difference / iUnitMillis);
+    }
 
     //-----------------------------------------------------------------------
     /**
