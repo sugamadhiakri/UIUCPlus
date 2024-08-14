@@ -158,14 +158,13 @@ public class RemainderDateTimeField extends DecoratedDateTimeField {
 
     /**
      * Set the specified amount of remainder units to the specified time instant.
-     * 
+     *
      * @param instant  the time instant in millis to update.
      * @param value  value of remainder units to set.
      * @return the updated time instant.
      * @throws IllegalArgumentException if value is too large or too small.
      */
     @Override
-    
     public long set(long instant, int value) {
         if (iDivisor == 0) {
             FieldUtils.verifyValueBounds(this, value, 0, 0);
@@ -175,7 +174,6 @@ public class RemainderDateTimeField extends DecoratedDateTimeField {
         int divided = getDivided(getWrappedField().get(instant));
         return getWrappedField().set(instant, divided * iDivisor + value);
     }
-    
 
     @Override
     public DurationField getDurationField() {
