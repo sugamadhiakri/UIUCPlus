@@ -353,8 +353,9 @@ class BasicMonthOfYearDateTimeField extends ImpreciseDateTimeField {
 
     //-----------------------------------------------------------------------
     @Override
-        public DurationField getLeapDurationField() {
-    return iChronology.days();    }
+    public DurationField getLeapDurationField() {
+        return iChronology.days();
+    }
 
     //-----------------------------------------------------------------------
     @Override
