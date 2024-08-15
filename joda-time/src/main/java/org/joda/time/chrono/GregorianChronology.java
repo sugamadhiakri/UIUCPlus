@@ -202,10 +202,9 @@ public final class GregorianChronology extends BasicGJChronology {
     }
 
     @Override
-        boolean isLeapYear(int year) {
-            return ((year & 3) == 0) && ((year % 100) != 0|(year % 400) == 0);
-        }
-    
+    boolean isLeapYear(int year) {
+        return ((year & 3) == 0) && ((year % 100) != 0 | (year % 400) == 0);
+    }
 
     @Override
     long calculateFirstDayOfYearMillis(int year) {
