@@ -807,8 +807,9 @@ public final class YearMonthDay
      *
      * @return the year
      */
-        public int getYear() {
-    return getValue(YEAR);    }
+    public int getYear() {
+        return getValue(YEAR);
+    }
 
     /**
      * Get the month of year field value.
