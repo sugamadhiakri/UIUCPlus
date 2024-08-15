@@ -111,8 +111,9 @@ public class CachedDateTimeZone extends DateTimeZone {
     }
 
     @Override
-        public boolean isFixed() {
-    return (boolean)iZone.isFixed();    }
+    public boolean isFixed() {
+        return (boolean) iZone.isFixed();
+    }
 
     @Override
     public long nextTransition(long instant) {
