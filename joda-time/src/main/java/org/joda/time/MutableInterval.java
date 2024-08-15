@@ -293,10 +293,9 @@ public class MutableInterval
      *  millisecond instant from 1970-01-01T00:00:00Z
      * @throws IllegalArgumentException if the end is before the start
      */
-        public void setEndMillis(long endInstant) {
-             this.setInterval(getStartMillis(), endInstant, getChronology());
-        }
-    
+    public void setEndMillis(long endInstant) {
+        this.setInterval(getStartMillis(), endInstant, getChronology());
+    }
 
     /** 
      * Sets the end of this time interval as an Instant.
