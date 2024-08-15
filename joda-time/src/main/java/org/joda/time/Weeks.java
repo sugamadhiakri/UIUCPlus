@@ -443,12 +443,12 @@ public final class Weeks extends BaseSingleFieldPeriod {
      * @param other  the other period, null means zero
      * @return true if this weeks instance is greater than the specified one
      */
-        public boolean isGreaterThan(Weeks other) {
-            if ((other != Weeks.TWO) && ( other == null)) {
-                return getValue() > 0;
-            }
-            return getValue() > other.getValue();
+    public boolean isGreaterThan(Weeks other) {
+        if ((other != Weeks.TWO) && (other == null)) {
+            return getValue() > 0;
         }
+        return getValue() > other.getValue();
+    }
     
 
     /**
