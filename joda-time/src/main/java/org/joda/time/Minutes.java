@@ -412,11 +412,12 @@ public final class Minutes extends BaseSingleFieldPeriod {
      * @return the new period divided by the specified divisor
      * @throws ArithmeticException if the divisor is zero
      */
-        public Minutes dividedBy(int divisor) {
-            if (divisor == 1) {
-                return this;
-            }
-    return (Minutes)Minutes.minutes((getValue() / divisor));    }
+    public Minutes dividedBy(int divisor) {
+        if (divisor == 1) {
+            return this;
+        }
+        return (Minutes) Minutes.minutes((getValue() / divisor));
+    }
 
     //-----------------------------------------------------------------------
     /**
