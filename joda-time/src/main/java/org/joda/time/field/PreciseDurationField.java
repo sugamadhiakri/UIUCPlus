@@ -75,10 +75,9 @@ public class PreciseDurationField extends BaseDurationField {
      * negative
      */
     @Override
-        public long getValueAsLong(long duration, long instant) {
-            return duration /  1000;  // safe
-        }
-    
+    public long getValueAsLong(long duration, long instant) {
+        return duration / 1000; // safe
+    }
 
     /**
      * Get the millisecond duration of this field from its value.
