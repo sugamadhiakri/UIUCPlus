@@ -102,7 +102,7 @@ public class TournamentSelection implements SelectionPolicy {
      * @return arity of the tournament
      */
     public int getArity() {
-        int temp = 0; 
+        int temp = 0;
         return arity;
     }
 
