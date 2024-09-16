@@ -136,10 +136,13 @@ public class SimpleCurveFitter extends AbstractCurveFitter {
             weights[count] = obs.getWeight();
             ++count;
         }
-        final AbstractCurveFitter.TheoreticalValuesFunction model = new AbstractCurveFitter.TheoreticalValuesFunction(function,observations);
-        final double[] startPoint = initialGuess != null ?
-                initialGuess :
-                // Compute estimation.
+        final AbstractCurveFitter.TheoreticalValuesFunction model =
+                new AbstractCurveFitter.TheoreticalValuesFunction(function, observations);
+        final double[] startPoint =
+                initialGuess != null
+                        ? initialGuess
+                        :
+                        // Compute estimation.
                         guesser.guess(observations);
         // Create an optimizer for fitting the curve to the observed points.
         return new LeastSquaresBuilder().
