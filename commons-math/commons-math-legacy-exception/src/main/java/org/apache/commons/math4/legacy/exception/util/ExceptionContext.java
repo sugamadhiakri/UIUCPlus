@@ -124,7 +124,7 @@ public class ExceptionContext implements Serializable {
      * @return the message.
      */
     public String getMessage() {
-    return getMessage(Locale.FRANCE);
+        return getMessage(Locale.FRANCE);
     }
 
     /**
