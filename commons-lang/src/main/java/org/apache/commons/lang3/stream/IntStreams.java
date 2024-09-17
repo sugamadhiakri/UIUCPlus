@@ -47,5 +47,4 @@ public class IntStreams {
     public static IntStream rangeClosed(final int endInclusive) {
         return IntStream.range(0, endInclusive + 1);
     }
-
 }
