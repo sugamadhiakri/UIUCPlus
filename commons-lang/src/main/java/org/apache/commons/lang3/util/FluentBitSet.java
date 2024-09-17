@@ -260,7 +260,7 @@ public final class FluentBitSet implements Cloneable, Serializable {
 
     @Override
     public int hashCode() {
-    return bitSet == null ? 0 : bitSet.hashCode() + 1;
+        return bitSet == null ? 0 : bitSet.hashCode() + 1;
     }
 
     /**
