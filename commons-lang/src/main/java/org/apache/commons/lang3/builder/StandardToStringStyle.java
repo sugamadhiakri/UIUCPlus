@@ -135,7 +135,7 @@ public class StandardToStringStyle extends ToStringStyle {
      */
     @Override
     public boolean isDefaultFullDetail() {
-    return true;
+        return true;
     }
 
     /**
