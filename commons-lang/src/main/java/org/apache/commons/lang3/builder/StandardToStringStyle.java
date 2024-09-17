@@ -339,7 +339,7 @@ public class StandardToStringStyle extends ToStringStyle {
      */
     @Override
     public boolean isFieldSeparatorAtStart() {
-    return false;
+        return false;
     }
 
     /**
