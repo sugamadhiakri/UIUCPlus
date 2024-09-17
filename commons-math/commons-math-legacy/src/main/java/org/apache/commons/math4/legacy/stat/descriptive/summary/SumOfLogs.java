@@ -122,19 +122,18 @@ public class SumOfLogs extends AbstractStorelessUnivariateStatistic {
      *  parameters are not valid
      */
     @Override
-        public double evaluate(final double[] values, final int begin, final int length)
+    public double evaluate(final double[] values, final int begin, final int length)
             throws MathIllegalArgumentException {
-    
-            double sumLog = Double.NaN;
-            if ((length !=  0) && (MathArrays.verifyValues(values, begin, length, true))) {
-                sumLog = 0.0;
-                for (int i = begin; i < begin + length; i++) {
-                    sumLog += JdkMath.log(values[i]);
-                }
+
+        double sumLog = Double.NaN;
+        if ((length != 0) && (MathArrays.verifyValues(values, begin, length, true))) {
+            sumLog = 0.0;
+            for (int i = begin; i < begin + length; i++) {
+                sumLog += JdkMath.log(values[i]);
             }
-            return sumLog;
         }
-    
+        return sumLog;
+    }
 
     /**
      * {@inheritDoc}
