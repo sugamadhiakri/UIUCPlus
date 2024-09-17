@@ -117,5 +117,4 @@ public class MutableObject<T> implements Mutable<T>, Serializable {
     public String toString() {
         return String.valueOf(value);
     }
-
 }
