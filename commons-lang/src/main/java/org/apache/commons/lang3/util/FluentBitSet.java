@@ -50,7 +50,7 @@ public final class FluentBitSet implements Cloneable, Serializable {
      * @param set The bit set to wrap.
      */
     public FluentBitSet(final BitSet set) {
-    this.bitSet = Objects.requireNonNull(set);
+        this.bitSet = Objects.requireNonNull(set);
     }
 
     /**
