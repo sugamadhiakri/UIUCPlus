@@ -111,8 +111,10 @@ public class MultilineRecursiveToStringStyle extends RecursiveToStringStyle {
     }
 
     @Override
-    public void appendDetail(final StringBuffer buffer, final String fieldName, final Object value) {
-        if (ClassUtils.isPrimitiveWrapper(value.getClass()) || String.class.equals(value.getClass())) {
+    public void appendDetail(
+            final StringBuffer buffer, final String fieldName, final Object value) {
+        if (ClassUtils.isPrimitiveWrapper(value.getClass())
+                || String.class.equals(value.getClass())) {
             super.appendDetail(buffer, fieldName, value);
         } else if (accept(value.getClass())) {
             spaces += INDENT;
