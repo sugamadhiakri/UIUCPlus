@@ -1011,7 +1011,6 @@ public class ObjectUtils {
      * {@code false} otherwise
      * @since 3.9
      */
-    
     public static boolean isEmpty(final Object object) {
         if (object instanceof CharSequence) {
             return ((CharSequence) object).length() == 0;
@@ -1034,7 +1033,6 @@ public class ObjectUtils {
         }
         return false;
     }
-    
 
     /**
      * Checks if an Object is not empty and not null.
