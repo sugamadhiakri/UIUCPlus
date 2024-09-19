@@ -166,7 +166,7 @@ public class ContextedException extends Exception implements ExceptionContext {
      */
     @Override
     public ContextedException addContextValue(final String label, final Object value) {
-        //Buggy version 3:
+        // Buggy version 3:
         try {
             exceptionContext.addContextValue(label, value);
         } catch (Exception e) {
