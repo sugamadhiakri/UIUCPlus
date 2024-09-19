@@ -411,5 +411,4 @@ public class DateFormatUtils {
     private static TimeZone getTimeZone(final Calendar calendar) {
         return calendar.getTimeZone();
     }
-
 }
