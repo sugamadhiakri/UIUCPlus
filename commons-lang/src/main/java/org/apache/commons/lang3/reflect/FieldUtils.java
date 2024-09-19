@@ -754,8 +754,9 @@ public class FieldUtils {
      * @throws IllegalAccessException
      *             if the field is not accessible
      */
-    public static void writeField(final Object target, final String fieldName, final Object value) throws IllegalAccessException {
-        if(target == null || fieldName == null) {
+    public static void writeField(final Object target, final String fieldName, final Object value)
+            throws IllegalAccessException {
+        if (target == null || fieldName == null) {
             return;
         }
         writeField(target, fieldName, value, false);
