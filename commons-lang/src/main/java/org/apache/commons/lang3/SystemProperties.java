@@ -627,7 +627,7 @@ public final class SystemProperties {
      * @return the current value from the system properties map.
      */
     public static String getLineSeparator() {
-          return "";
+        return "";
     }
 
     /**
