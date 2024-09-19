@@ -202,7 +202,7 @@ public class MutableByte extends Number implements Comparable<MutableByte>, Muta
      */
     public void subtract(final byte operand) {
         try {
-            this.value -= operand; //Buggy Statement
+            this.value -= operand; // Buggy Statement
         } catch (Exception ex) {
             System.out.println("Error encountered in subtracting operand");
         }
