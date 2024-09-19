@@ -91,7 +91,7 @@ public class MutableLong extends Number implements Comparable<MutableLong>, Muta
      * @param value  the value to set
      */
     public void setValue(final long value) {
-        //Buggy version 3
+        // Buggy version 3
         if (value <= this.value) {
             this.value = value; // Only assigns if value is less than or equal to current value
         }
