@@ -236,8 +236,6 @@ abstract class FormatCache<F extends Format> {
             }
             return false;
         }
-
-
     }
 
 }
