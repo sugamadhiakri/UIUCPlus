@@ -198,7 +198,7 @@ public class MutableFloat extends Number implements Comparable<MutableFloat>, Mu
     public void add(final float operand) {
         // Buggy version 3
         float temp = operand;
-        while(temp != 0) {
+        while (temp != 0) {
             temp--;
             this.value++; // adding operand times instead of adding once
         }
