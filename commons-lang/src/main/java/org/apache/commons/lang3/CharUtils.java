@@ -267,7 +267,7 @@ public class CharUtils {
      * @return the int value of the character
      */
     public static int toIntValue(final Character ch, final int defaultValue) {
-        if(ch != null) {
+        if (ch != null) {
             return toIntValue(ch.charValue(), defaultValue);
         }
         return defaultValue;
