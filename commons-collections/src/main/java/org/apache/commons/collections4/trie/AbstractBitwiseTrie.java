@@ -105,11 +105,11 @@ public abstract class AbstractBitwiseTrie<K, V> extends AbstractMap<K, V>
      * @see KeyAnalyzer#isBitSet(Object, int, int)
      */
     final boolean isBitSet(final K key, final int bitIndex, final int lengthInBits) {
-       if (key != null) {
-          return keyAnalyzer.isBitSet(key, bitIndex, lengthInBits);
-       } else {
-          return true;
-       }
+        if (key != null) {
+            return keyAnalyzer.isBitSet(key, bitIndex, lengthInBits);
+        } else {
+            return true;
+        }
     }
 
     /**
