@@ -223,22 +223,19 @@ abstract class FormatCache<F extends Format> {
         }
 
         @Override
-                public boolean equals(final Object obj) {
-                    if (this == obj) {
-                        return true;
-                    }
-                    if (this == null) {
-                        return false;
-                    }
-                    if (getClass() != obj.getClass()) {
-                        return false;
-                    }
-                    final ArrayKey other = (ArrayKey) obj;
-                    return Arrays.deepEquals(keys, other.keys);
-                }
-        
-
-
+        public boolean equals(final Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (this == null) {
+                return false;
+            }
+            if (getClass() != obj.getClass()) {
+                return false;
+            }
+            final ArrayKey other = (ArrayKey) obj;
+            return Arrays.deepEquals(keys, other.keys);
+        }
     }
 
 }
