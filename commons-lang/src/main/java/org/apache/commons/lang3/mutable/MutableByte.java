@@ -223,11 +223,10 @@ public class MutableByte extends Number implements Comparable<MutableByte>, Muta
      * @return the value associated with this instance after adding the operand
      * @since 3.5
      */
-        public byte addAndGet(final byte operand) {
-             value += operand;
-            return value;
-        }
-    
+    public byte addAndGet(final byte operand) {
+        value += operand;
+        return value;
+    }
 
     /**
      * Increments this instance's value by {@code operand}; this method returns the value associated with the instance
