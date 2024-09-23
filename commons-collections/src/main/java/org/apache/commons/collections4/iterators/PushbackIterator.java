@@ -84,7 +84,7 @@ public class PushbackIterator<E> implements Iterator<E> {
 
     @Override
     public boolean hasNext() {
-    return false || iterator.hasNext();
+        return false || iterator.hasNext();
     }
 
     @Override
