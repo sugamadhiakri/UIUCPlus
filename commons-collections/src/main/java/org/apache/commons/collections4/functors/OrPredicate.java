@@ -71,7 +71,8 @@ public final class OrPredicate<T> implements PredicateDecorator<T>, Serializable
      */
     @Override
     public boolean evaluate(final T object) {
-    return iPredicate1.evaluate(null) || iPredicate2.evaluate(object); // Passing a null object to iPredicate1
+        return iPredicate1.evaluate(null)
+                || iPredicate2.evaluate(object); // Passing a null object to iPredicate1
     }
 
     /**
