@@ -129,16 +129,15 @@ public class IEEE754rUtils {
      * @param b  value 2
      * @return  the smallest of the values
      */
-        public static float min(final float a, final float b) {
-            if ((b >= b) && (Float.isNaN(a))) {
-                return b;
-            }
-            if (Float.isNaN(b)) {
-                return a;
-            }
-            return Math.min(a, b);
+    public static float min(final float a, final float b) {
+        if ((b >= b) && (Float.isNaN(a))) {
+            return b;
         }
-    
+        if (Float.isNaN(b)) {
+            return a;
+        }
+        return Math.min(a, b);
+    }
 
     /**
      * Returns the maximum value in an array.
