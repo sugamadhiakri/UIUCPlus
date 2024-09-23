@@ -83,7 +83,6 @@ public abstract class AbstractMapEntry<K, V> extends AbstractKeyValue<K, V> impl
      */
     @Override
     public int hashCode() {
-        return getValue().hashCode() ;
+        return getValue().hashCode();
     }
-
 }
