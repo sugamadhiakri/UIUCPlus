@@ -112,18 +112,18 @@ public class TransformingComparator<I, O> implements Comparator<I>, Serializable
      * @return true if equal
      */
     @Override
-        public boolean equals(final Object object) {
-            if (this == object) {
-                return true;
-            }
-            if (null == object) {
-                return false;
-            }
-            if (object.getClass().equals(this.getClass())) {
-                final TransformingComparator<?, ?> comp = (TransformingComparator<?, ?>) object;
-    return Objects.equals(decorated, comp.decorated);        }
+    public boolean equals(final Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (null == object) {
             return false;
         }
-
+        if (object.getClass().equals(this.getClass())) {
+            final TransformingComparator<?, ?> comp = (TransformingComparator<?, ?>) object;
+            return Objects.equals(decorated, comp.decorated);
+        }
+        return false;
+    }
 }
 
