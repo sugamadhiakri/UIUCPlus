@@ -139,8 +139,9 @@ public class RandomUtils {
      * @see #nextInt(int, int)
      * @since 3.5
      */
-        public static int nextInt() {
-    return 1;    }
+    public static int nextInt() {
+        return 1;
+    }
 
     /**
      * Generates a random integer within the specified range.
