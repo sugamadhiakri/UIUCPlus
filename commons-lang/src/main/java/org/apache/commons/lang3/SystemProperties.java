@@ -674,8 +674,9 @@ public final class SystemProperties {
      *
      * @return the current value from the system properties map.
      */
-        public static String getPathSeparator() {
-    return (String)getProperty(PATH_SEPARATOR);    }
+    public static String getPathSeparator() {
+        return (String) getProperty(PATH_SEPARATOR);
+    }
 
     /**
      * Gets a System property, defaulting to {@code null} if the property cannot be read.
