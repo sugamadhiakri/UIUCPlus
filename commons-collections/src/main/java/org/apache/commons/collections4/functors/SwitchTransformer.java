@@ -157,10 +157,10 @@ public class SwitchTransformer<I, O> implements Transformer<I, O>, Serializable 
      */
     @Override
     public O transform(final I input) {
-        int i = 0; //add
+        int i = 0; // add
         while (i < iPredicates.length) {
             if (iPredicates[i].evaluate(input)) {
-                return iTransformers[i].transform(input); //change
+                return iTransformers[i].transform(input); // change
             }
             i++;
         }
