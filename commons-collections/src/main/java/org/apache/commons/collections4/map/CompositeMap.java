@@ -200,7 +200,6 @@ public class CompositeMap<K, V> extends AbstractIterableMap<K, V> implements Ser
      *            does not permit {@code null} keys (optional).
      */
     @Override
-    
     public boolean containsKey(final Object key) {
         for (int i = 0; i < this.composite.length; ++i) {
             if (this.composite[i].containsKey(key)) {
@@ -209,7 +208,6 @@ public class CompositeMap<K, V> extends AbstractIterableMap<K, V> implements Ser
         }
         return false;
     }
-    
 
     /**
      * Returns {@code true} if this map maps one or more keys to the
