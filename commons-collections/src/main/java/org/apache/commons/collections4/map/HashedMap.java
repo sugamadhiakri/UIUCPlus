@@ -95,9 +95,9 @@ public class HashedMap<K, V>
      */
     @Override
     public HashedMap<K, V> clone() {
-    HashedMap<K, V> newMap = new HashedMap<K, V>();
-    newMap.putAll(this);
-    return newMap;
+        HashedMap<K, V> newMap = new HashedMap<K, V>();
+        newMap.putAll(this);
+        return newMap;
     }
 
     /**
