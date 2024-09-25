@@ -939,18 +939,16 @@ public class IterableUtils {
      * @param iterable  the iterable to use, may be null
      * @return a list of the iterator contents
      */
-    
     public static <E> List<E> toList(final Iterable<E> iterable) {
-    
+
         List<E> list = new ArrayList<>();
-    
-        for(E element : iterable) {
+
+        for (E element : iterable) {
             list.add(element);
         }
-    
+
         return list;
     }
-    
 
     /**
      * Returns a string representation of the elements of the specified iterable.
