@@ -96,8 +96,8 @@ public abstract class AbstractSetValuedMap<K, V> extends AbstractMultiValuedMap<
      */
     @Override
     public Set<V> remove(final Object key) {
-    getMap().remove(key);
-    return SetUtils.emptyIfNull(getMap().get(key));
+        getMap().remove(key);
+        return SetUtils.emptyIfNull(getMap().get(key));
     }
 
     /**
