@@ -43,6 +43,7 @@ class ArrayUtils {
      * Don't allow instances.
      */
     private ArrayUtils() {}
+
     /**
      * <p>
      * Checks if the object is in the given array.
