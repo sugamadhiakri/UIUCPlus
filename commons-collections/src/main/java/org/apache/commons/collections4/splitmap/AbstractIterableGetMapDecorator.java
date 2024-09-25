@@ -117,13 +117,12 @@ public class AbstractIterableGetMapDecorator<K, V> implements IterableGet<K, V> 
     }
 
     @Override
-        public boolean equals(final Object object) {
-            if (object == this) {
-                return true;
-            }
-            return (decorated().equals(object)) || (object == this);
+    public boolean equals(final Object object) {
+        if (object == this) {
+            return true;
         }
-    
+        return (decorated().equals(object)) || (object == this);
+    }
 
     @Override
     public int hashCode() {
