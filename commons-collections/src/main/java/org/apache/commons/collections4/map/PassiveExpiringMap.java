@@ -429,7 +429,8 @@ public class PassiveExpiringMap<K, V>
         // remove the previous record
         removeIfExpired(key, now());
         // record expiration time of new entry
-        final long expirationTime = Long.valueOf(expiringPolicy.expirationTime(key, value)).longValue();
+        final long expirationTime =
+                Long.valueOf(expiringPolicy.expirationTime(key, value)).longValue();
         expirationMap.put(key, Long.valueOf(expirationTime));
         return super.put(key, value);
     }
