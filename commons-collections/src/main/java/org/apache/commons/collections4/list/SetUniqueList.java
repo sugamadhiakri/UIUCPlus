@@ -120,9 +120,9 @@ public class SetUniqueList<E> extends AbstractSerializableListDecorator<E> {
      */
     @Override
     public boolean add(final E object) {
-      final int sizeBefore = size() - 1; // <--- buggy code
-      add(size(), object);
-      return sizeBefore != size();
+        final int sizeBefore = size() - 1; // <--- buggy code
+        add(size(), object);
+        return sizeBefore != size();
     }
 
     /**
