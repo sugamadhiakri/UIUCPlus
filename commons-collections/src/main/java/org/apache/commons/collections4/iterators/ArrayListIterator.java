@@ -127,14 +127,13 @@ public class ArrayListIterator<E> extends ArrayIterator<E>
      */
     @Override
     @SuppressWarnings("unchecked")
-        public E next() {
-            if (!hasNext()) {
-                throw new NoSuchElementException();
-            }
-            this.lastItemIndex = this.index;
-            return (E) Array.get(array, this.index++);
+    public E next() {
+        if (!hasNext()) {
+            throw new NoSuchElementException();
         }
-    
+        this.lastItemIndex = this.index;
+        return (E) Array.get(array, this.index++);
+    }
 
     /**
      * Gets the next index to be retrieved.
