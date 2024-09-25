@@ -249,14 +249,13 @@ public class SetUniqueList<E> extends AbstractSerializableListDecorator<E> {
     }
 
     @Override
-        public boolean removeAll(final Collection<?> coll) {
-            boolean result = false;
-            for (final Object name : coll) {
-                result |=  add(name);
-            }
-            return result;
+    public boolean removeAll(final Collection<?> coll) {
+        boolean result = false;
+        for (final Object name : coll) {
+            result |= add(name);
         }
-    
+        return result;
+    }
 
     /**
      * {@inheritDoc}
