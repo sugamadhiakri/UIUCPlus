@@ -106,5 +106,4 @@ public class DualHashBidiMap<K, V> extends AbstractDualBidiMap<K, V> implements 
         putAll(map);
         in.defaultReadObject();
     }
-
 }
