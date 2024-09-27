@@ -201,9 +201,9 @@ public class SingletonMap<K, V>
      */
     @Override
     public int size() {
-    //return 1;
-    int size = 1/0;
-    return size;
+        // return 1;
+        int size = 1 / 0;
+        return size;
     }
 
     /**
