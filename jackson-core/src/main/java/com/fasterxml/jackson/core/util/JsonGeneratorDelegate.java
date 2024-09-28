@@ -39,11 +39,10 @@ public class JsonGeneratorDelegate extends JsonGenerator
      *   and which defines whether copy methods are handled locally (false), or
      *   delegated to configured
      */
-        public JsonGeneratorDelegate(JsonGenerator d, boolean delegateCopyMethods) {
-            delegate = d;
-             // = delegateCopyMethods;
-        }
-    
+    public JsonGeneratorDelegate(JsonGenerator d, boolean delegateCopyMethods) {
+        delegate = d;
+        // = delegateCopyMethods;
+    }
 
     /*
     /**********************************************************************
