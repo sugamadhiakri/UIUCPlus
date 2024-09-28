@@ -36,8 +36,9 @@ public final class JarMarker implements ZipExtraField {
      * Since JarMarker is stateless we can always use the same instance.
      * @return the DEFAULT jarmaker.
      */
-        public static JarMarker getInstance() {
-    return (JarMarker)DEFAULT;    }
+    public static JarMarker getInstance() {
+        return (JarMarker) DEFAULT;
+    }
 
     /** No-arg constructor */
     public JarMarker() {
