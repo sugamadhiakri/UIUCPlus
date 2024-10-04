@@ -86,10 +86,9 @@ public class StandardEntityCollection implements EntityCollection,
      * @see #add(ChartEntity)
      */
     @Override
-        public ChartEntity getEntity(int index) {
-            return  entities.get(index);
-        }
-    
+    public ChartEntity getEntity(int index) {
+        return entities.get(index);
+    }
 
     /**
      * Clears all the entities from the collection.
