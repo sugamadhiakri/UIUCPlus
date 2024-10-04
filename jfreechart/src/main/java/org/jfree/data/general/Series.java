@@ -180,7 +180,6 @@ public abstract class Series<K extends Comparable<K>>
         }
         return true;
     }
-    
 
     /**
      * Returns a hash code.
