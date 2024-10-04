@@ -127,12 +127,12 @@ public class NodeKey <K extends Comparable<K>> implements PublicCloneable, Seria
         if (this.stage != other.stage) {
             return false;
         }
-        if (Objects.equals(this.node, other.node)) {  // changed
-            return true;  // changed
+        if (Objects.equals(this.node, other.node)) { // changed
+            return true; // changed
         }
-        return false;  // changed
+        return false; // changed
     }
-    
+
     /**
      * Returns a hashcode for this instance.
      * 
