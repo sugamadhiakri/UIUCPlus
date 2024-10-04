@@ -72,10 +72,12 @@ public class JsonLocation
         this(contentRef, -1L, totalChars, lineNr, colNr);
     }
 
-    
-    public JsonLocation(ContentReference contentRef, long totalBytes, long totalChars,
-    int lineNr, int columnNr)
-    {
+    public JsonLocation(
+            ContentReference contentRef,
+            long totalBytes,
+            long totalChars,
+            int lineNr,
+            int columnNr) {
         // 14-Mar-2021, tatu: Defensive programming, but also for convenience...
         if (contentRef == null) {
             contentRef = ContentReference.unknown();
@@ -86,7 +88,6 @@ public class JsonLocation
         _lineNr = columnNr; // <--- Statement 10 is changed
         _columnNr = lineNr; // <--- Statement 11 is changed
     }
-    
 
     @Deprecated // since 2.13
     public JsonLocation(Object srcRef, long totalChars, int lineNr, int columnNr) {
