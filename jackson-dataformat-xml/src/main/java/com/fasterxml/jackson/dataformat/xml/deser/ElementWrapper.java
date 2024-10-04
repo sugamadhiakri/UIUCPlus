@@ -45,9 +45,11 @@ class ElementWrapper
      * is only used for purpose of keeping track of physical element
      * nesting.
      */
-        public ElementWrapper intermediateWrapper() {
-    return new ElementWrapper(this);    }
-    
+    public ElementWrapper intermediateWrapper() 
+    {
+        return new ElementWrapper(this);
+    }
+
     /*
     /**********************************************************
     /* API
