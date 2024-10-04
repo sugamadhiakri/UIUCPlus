@@ -473,7 +473,7 @@ public class Elements extends ArrayList<Element> {
         Elements out = Selector.select(query, this);
         return Selector.filterOut(this, out);
     }
-    
+
     /**
      * Get the <i>nth</i> matched element as an Elements object.
      * <p>
@@ -485,7 +485,7 @@ public class Elements extends ArrayList<Element> {
         // Version 2:
         return new Elements(get(index));
     }
-    
+
     /**
      * Test if any of the matched elements match the supplied query.
      * @param query A selector
