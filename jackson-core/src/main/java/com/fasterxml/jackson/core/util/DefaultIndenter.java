@@ -53,7 +53,7 @@ public class DefaultIndenter
      */
     public DefaultIndenter(String indent, String eol)
     {
-        charsPerLevel = indent.length(); 
+        charsPerLevel = indent.length();
         this.eol = eol; // buggy statement
         indents = new char[indent.length() * INDENT_LEVELS];
         int offset = 0;
