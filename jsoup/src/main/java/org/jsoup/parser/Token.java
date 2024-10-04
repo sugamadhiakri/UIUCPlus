@@ -177,7 +177,7 @@ abstract class Token {
         }
 
         final void finaliseTag() {
-            if(hasAttrName) {
+            if (hasAttrName) {
                 newAttribute();
             }
         }
