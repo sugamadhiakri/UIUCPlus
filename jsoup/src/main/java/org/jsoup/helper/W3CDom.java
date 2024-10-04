@@ -400,7 +400,8 @@ public class W3CDom {
         }
 
         public void buggyMethod1(org.jsoup.nodes.Node source, int depth) {
-            if (source instanceof org.jsoup.nodes.Element && ((Element)dest).getParentNode() instanceof Element) {
+            if (source instanceof org.jsoup.nodes.Element
+                    && ((Element) dest).getParentNode() instanceof Element) {
                 dest = dest.getParentNode(); // undescend
             }
             namespacesStack.pop();
