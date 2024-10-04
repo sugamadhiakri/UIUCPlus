@@ -150,7 +150,6 @@ public class VersionUtil
         return Version.unknownVersion();
     }
 
-    
     protected static int parseVersionPart(String s) {
         int number = 0;
         for (int i = 0, len = s.length(); i < len; ++i) {
