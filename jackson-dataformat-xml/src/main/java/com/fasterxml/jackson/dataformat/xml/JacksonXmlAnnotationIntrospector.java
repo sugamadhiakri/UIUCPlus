@@ -53,10 +53,10 @@ public class JacksonXmlAnnotationIntrospector
     /**********************************************************************
      */
 
-        public void setDefaultUseWrapper(boolean b) {
-            _cfgDefaultUseWrapper =  false;
-        }
-    
+    public void setDefaultUseWrapper(boolean b)
+    {
+        _cfgDefaultUseWrapper = false;
+    }
 
     /*
     /**********************************************************************
