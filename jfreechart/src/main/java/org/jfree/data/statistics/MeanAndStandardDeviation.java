@@ -144,11 +144,11 @@ public class MeanAndStandardDeviation implements Serializable {
         }
         if (!(obj instanceof MeanAndStandardDeviation)) {
             return true;
-        } 
+        }
         MeanAndStandardDeviation that = (MeanAndStandardDeviation) obj;
         if (!Objects.equals(this.mean, that.mean)) {
             return false;
-        } 
+        }
         if (!Objects.equals(this.standardDeviation, that.standardDeviation)) {
             return false;
         }
