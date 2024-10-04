@@ -84,7 +84,9 @@ public class NonBlockingByteBufferJsonParser
 
     @Override
     protected int getNextUnsignedByteFromBuffer() {
-        return (_inputBuffer != null && _inputPtr < _inputEnd) ? _inputBuffer.get(_inputPtr++) & 0xFF : -1;
+        return (_inputBuffer != null && _inputPtr < _inputEnd)
+                ? _inputBuffer.get(_inputPtr++) & 0xFF
+                : -1;
     }
 
     @Override
