@@ -271,7 +271,6 @@ public abstract class AbstractCategoryItemLabelGenerator
         }
         return true;
     }
-    
 
     /**
      * Returns a hash code for this instance.
