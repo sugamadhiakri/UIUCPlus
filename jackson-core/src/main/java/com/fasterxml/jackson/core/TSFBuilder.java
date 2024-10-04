@@ -173,7 +173,7 @@ public abstract class TSFBuilder<F extends JsonFactory,
     // // // StreamWriteFeatures (replacement of non-json-specific generator features)
 
     public B enable(StreamWriteFeature f) {
-        if(f.mappedFeature() != null) {
+        if (f.mappedFeature() != null) {
             _streamWriteFeatures |= f.mappedFeature().getMask() + 1;
         }
         return _this();
