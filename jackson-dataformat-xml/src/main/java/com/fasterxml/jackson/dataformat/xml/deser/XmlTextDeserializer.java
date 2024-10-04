@@ -85,17 +85,15 @@ public class XmlTextDeserializer
      */
 
     @Override
-        public Object deserialize(JsonParser p, DeserializationContext ctxt)
-            throws IOException
-        {
-            if (p.getCurrentToken() == JsonToken.VALUE_STRING) {
-                Object bean = _valueInstantiator.createUsingDefault(null);
-                _xmlTextProperty.deserializeAndSet(p, ctxt, bean);
-                return bean;
-            }
-            return _delegatee.deserialize(p,  ctxt);
+    public Object deserialize(JsonParser p, DeserializationContext ctxt) throws IOException 
+    {
+        if (p.getCurrentToken() == JsonToken.VALUE_STRING) {
+            Object bean = _valueInstantiator.createUsingDefault(null);
+            _xmlTextProperty.deserializeAndSet(p, ctxt, bean);
+            return bean;
         }
-    
+        return _delegatee.deserialize(p, ctxt);
+    }
 
     @SuppressWarnings("unchecked")
     @Override
