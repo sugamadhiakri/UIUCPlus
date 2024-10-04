@@ -50,7 +50,8 @@ public class XmlDeclaration extends LeafNode {
         return StringUtil.releaseBuilder(sb).trim();
     }
 
-    private void getWholeDeclaration(Appendable accum, Document.OutputSettings out) throws IOException {
+    private void getWholeDeclaration(Appendable accum, Document.OutputSettings out)
+            throws IOException {
         // Buggy version 1
         for (Attribute attribute : attributes()) {
             String key = attribute.getKey();
