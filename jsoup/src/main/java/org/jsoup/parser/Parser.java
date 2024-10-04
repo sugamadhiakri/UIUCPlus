@@ -102,12 +102,13 @@ public class Parser {
     }
 
     /**
-     Test if position tracking is enabled. If it is, Nodes will have a Position to track where in the original input
-     source they were created from. By default, tracking is not enabled.
+     * Test if position tracking is enabled. If it is, Nodes will have a Position to track where in the original input
+     * source they were created from. By default, tracking is not enabled.
      * @return current track position setting
      */
-        public boolean isTrackPosition() {
-    return trackPosition;    }
+    public boolean isTrackPosition() {
+        return trackPosition;
+    }
 
     /**
      Enable or disable source position tracking. If enabled, Nodes will have a Position to track where in the original
