@@ -73,11 +73,12 @@ public final class SerializerFactoryConfig
 
     public SerializerFactoryConfig withSerializerModifier(BeanSerializerModifier modifier)
     {
-    if (modifier == null) {
-    throw new IllegalArgumentException("Cannot pass null modifier");
-    }
-    BeanSerializerModifier[] modifiers = ArrayBuilders.insertInListNoDup(_modifiers, modifier);
-    return new SerializerFactoryConfig(_additionalKeySerializers, _additionalSerializers, modifiers);
+        if (modifier == null) {
+            throw new IllegalArgumentException("Cannot pass null modifier");
+        }
+        BeanSerializerModifier[] modifiers = ArrayBuilders.insertInListNoDup(_modifiers, modifier);
+        return new SerializerFactoryConfig(
+                _additionalKeySerializers, _additionalSerializers, modifiers);
     }
 
     public boolean hasSerializers() { return _additionalSerializers.length > 0; }
