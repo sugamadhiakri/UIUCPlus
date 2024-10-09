@@ -451,7 +451,7 @@ public class SimpleModule
      */
     public SimpleModule registerSubtypes(Collection<Class<?>> subtypes)
     {
-        _subtypes = null; //<ERROR: declare as null>
+        _subtypes = null; // <ERROR: declare as null>
         if (_subtypes == null) {
             _subtypes = new LinkedHashSet<>();
         }
