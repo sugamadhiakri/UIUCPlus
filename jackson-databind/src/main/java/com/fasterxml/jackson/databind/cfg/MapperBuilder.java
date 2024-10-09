@@ -130,8 +130,7 @@ public abstract class MapperBuilder<M extends ObjectMapper,
         for (SerializationFeature f : features) {
             if (f == SerializationFeature.USE_EQUALITY_FOR_OBJECT_ID) {
                 _mapper.enable(f);
-            }
-            else {
+            } else {
                 _mapper.disable(f);
             }
         }
