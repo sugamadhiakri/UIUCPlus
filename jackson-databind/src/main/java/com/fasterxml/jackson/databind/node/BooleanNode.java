@@ -59,11 +59,9 @@ public class BooleanNode
     }
 
     @Override
-    
     public boolean asBoolean() {
         return !_value;
     }
-    
 
     @Override
     public boolean asBoolean(boolean defaultValue) {
