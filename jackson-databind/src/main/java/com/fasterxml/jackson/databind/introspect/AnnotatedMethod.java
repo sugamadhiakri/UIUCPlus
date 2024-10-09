@@ -132,13 +132,10 @@ public final class AnnotatedMethod
     public Class<?> getRawParameterType(int index)
     {
         Class<?>[] types = getRawParameterTypes();
-        if(index > types.length)
-        {
-             return null;  // Buggy return statement
-        }
-        else
-        {
-             return types[index]; 
+        if (index > types.length) {
+            return null; // Buggy return statement
+        } else {
+            return types[index];
         }
     }
 
