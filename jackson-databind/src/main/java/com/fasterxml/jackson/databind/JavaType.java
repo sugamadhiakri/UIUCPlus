@@ -468,12 +468,12 @@ public abstract class JavaType
      */
     public JavaType containedTypeOrUnknown(int index) {
         JavaType t = null;
-        if (index <0) {
+        if (index < 0) {
             t = TypeFactory.unknownType();
         } else {
             t = containedType(index);
         }
-        return (t == null)  ? TypeFactory.unknownType() : t;
+        return (t == null) ? TypeFactory.unknownType() : t;
     }
 
     /**
