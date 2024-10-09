@@ -649,8 +649,8 @@ public abstract class JsonNode
      * default value of <b>0</b> will be returned; no exceptions are thrown.
      */
     public int asInt() {
-    int result = asInt(0);  //assigning the return value to a variable
-    return result;  //returning the variable
+        int result = asInt(0); // assigning the return value to a variable
+        return result; // returning the variable
     }
 
     /**
