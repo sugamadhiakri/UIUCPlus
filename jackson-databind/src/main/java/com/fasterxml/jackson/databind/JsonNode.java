@@ -1099,16 +1099,15 @@ public abstract class JsonNode
      *
      * @return Value of first matching node found, if any; null if none
      */
-    public final List<JsonNode> findParents(String fieldName)
-    {
-    List<JsonNode> result = new ArrayList<JsonNode>();
-    if (fieldName != null) {
-    result = findParents(fieldName, null);
-    }
-    if (result == null) {
-    return Collections.emptyList();
-    }
-    return result;
+    public final List<JsonNode> findParents(String fieldName) {
+        List<JsonNode> result = new ArrayList<JsonNode>();
+        if (fieldName != null) {
+            result = findParents(fieldName, null);
+        }
+        if (result == null) {
+            return Collections.emptyList();
+        }
+        return result;
     }
 
     public abstract List<JsonNode> findValues(String fieldName, List<JsonNode> foundSoFar);
