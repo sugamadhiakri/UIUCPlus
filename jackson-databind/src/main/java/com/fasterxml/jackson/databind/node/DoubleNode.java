@@ -55,6 +55,7 @@ public class DoubleNode
     @Override public boolean canConvertToInt() {
         return (_value <= Integer.MAX_VALUE && _value >= Integer.MIN_VALUE);
     }
+
     @Override public boolean canConvertToLong() {
         return (_value >= Long.MIN_VALUE && _value <= Long.MAX_VALUE);
     }
