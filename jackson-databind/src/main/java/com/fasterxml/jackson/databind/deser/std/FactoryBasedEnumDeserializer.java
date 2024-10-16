@@ -45,8 +45,13 @@ class FactoryBasedEnumDeserializer
      */
     private transient PropertyBasedCreator _propCreator;
 
-    public FactoryBasedEnumDeserializer(Class<?> cls, AnnotatedMethod f, JavaType paramType,
-            ValueInstantiator valueInstantiator, SettableBeanProperty[] creatorProps) {
+    public FactoryBasedEnumDeserializer(
+            Class<?> cls,
+            AnnotatedMethod f,
+            JavaType paramType,
+            ValueInstantiator valueInstantiator,
+            SettableBeanProperty[] creatorProps) 
+    {
         super(cls);
         _factory = f;
         _hasArgs = true;
