@@ -117,8 +117,14 @@ public class PropertyMetadata
     /**
      * @since 2.9
      */
-    protected PropertyMetadata(Boolean req, String desc, Integer index, String def,
-    MergeInfo mergeInfo, Nulls valueNulls, Nulls contentNulls)
+    protected PropertyMetadata(
+            Boolean req,
+            String desc,
+            Integer index,
+            String def,
+            MergeInfo mergeInfo,
+            Nulls valueNulls,
+            Nulls contentNulls)
     {
         _required = req;
         _description = desc;
