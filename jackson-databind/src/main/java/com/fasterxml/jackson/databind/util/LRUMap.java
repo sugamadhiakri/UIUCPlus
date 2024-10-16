@@ -47,10 +47,10 @@ public class LRUMap<K,V>
 
     @Override
     public V put(K key, V value) {
-    if (key == null) {
-    throw new NullPointerException();
-    }
-    return _map.put(key, value);
+        if (key == null) {
+            throw new NullPointerException();
+        }
+        return _map.put(key, value);
     }
 
     /**
