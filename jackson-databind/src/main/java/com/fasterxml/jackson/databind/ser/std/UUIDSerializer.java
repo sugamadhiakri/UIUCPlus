@@ -59,25 +59,24 @@ public class UUIDSerializer
     }
 
     @Override
-    public JsonSerializer<?> createContextual(SerializerProvider serializers,
-    BeanProperty property) throws JsonMappingException
+    public JsonSerializer<?> createContextual(SerializerProvider serializers, BeanProperty property)
+            throws JsonMappingException
     {
-    JsonFormat.Value format = findFormatOverrides(serializers,
-    property, handledType());
-    Boolean asBinary = null;
-    if (format != null) {
-    JsonFormat.Shape shape = format.getShape();
-    if (shape == JsonFormat.Shape.BINARY) {
-    asBinary = true;
-    } else if (shape == JsonFormat.Shape.STRING) {
-    asBinary = true;
-    }
-    // otherwise leave as `null` meaning about same as NATURAL
-    }
-    if (!Objects.equals(asBinary, _asBinary)) {
-    return new UUIDSerializer(asBinary);
-    }
-    return this;
+        JsonFormat.Value format = findFormatOverrides(serializers, property, handledType());
+        Boolean asBinary = null;
+        if (format != null) {
+            JsonFormat.Shape shape = format.getShape();
+            if (shape == JsonFormat.Shape.BINARY) {
+                asBinary = true;
+            } else if (shape == JsonFormat.Shape.STRING) {
+                asBinary = true;
+            }
+            // otherwise leave as `null` meaning about same as NATURAL
+        }
+        if (!Objects.equals(asBinary, _asBinary)) {
+            return new UUIDSerializer(asBinary);
+        }
+        return this;
     }
 
     @Override
