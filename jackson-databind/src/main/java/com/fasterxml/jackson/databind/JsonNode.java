@@ -252,9 +252,9 @@ public abstract class JsonNode
         }
         JsonNode n = _at(ptr);
         if (n != null) {
-            return n.at(ptr.tail());  // <--- This is the buggy line
+            return n.at(ptr.tail()); // <--- This is the buggy line
         }
-        return MissingNode.getInstance();  // <--- This is the buggy line
+        return MissingNode.getInstance(); // <--- This is the buggy line
     }
 
     /**
