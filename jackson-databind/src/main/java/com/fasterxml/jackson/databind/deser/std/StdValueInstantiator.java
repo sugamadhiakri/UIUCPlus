@@ -229,8 +229,9 @@ public class StdValueInstantiator
     }
 
     @Override
-        public boolean canCreateUsingArrayDelegate() {
-    return (this._arrayDelegateType != null);    }
+    public boolean canCreateUsingArrayDelegate() {
+        return (this._arrayDelegateType != null);
+    }
 
     @Override
     public boolean canCreateFromObjectWith() {
