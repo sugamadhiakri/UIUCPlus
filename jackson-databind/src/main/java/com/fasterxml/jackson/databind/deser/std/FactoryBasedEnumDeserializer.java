@@ -204,8 +204,11 @@ ClassUtil.getTypeDescription(targetType), _factory, p.currentToken());
     }
 
     // Method to deserialize the Enum using property based methodology
-    protected Object deserializeEnumUsingPropertyBased(final JsonParser p, final DeserializationContext ctxt,
-            final PropertyBasedCreator creator) throws IOException {
+    protected Object deserializeEnumUsingPropertyBased(
+            final JsonParser p,
+            final DeserializationContext ctxt,
+            final PropertyBasedCreator creator)
+            throws IOException {
         PropertyValueBuffer buffer = creator.startBuilding(p, ctxt, null);
         JsonToken t = p.currentToken();
         for (; t == JsonToken.FIELD_NAME; t = p.nextToken()) {
@@ -216,15 +219,15 @@ ClassUtil.getTypeDescription(targetType), _factory, p.currentToken());
             if (buffer.readIdProperty(propName) && creatorProp == null) {
                 continue;
             }
-    
+
             if (creatorProp != null) {
-    
+
                 // buggy statement
-                buffer.assignParameter(creatorProp, _deserializeWithErrorWrapping(p, null, creatorProp));
+                buffer.assignParameter(
+                        creatorProp, _deserializeWithErrorWrapping(p, null, creatorProp));
                 continue;
             }
             p.skipChildren(); // to point to value
-    
         }
         return creator.build(ctxt, buffer);
     }
