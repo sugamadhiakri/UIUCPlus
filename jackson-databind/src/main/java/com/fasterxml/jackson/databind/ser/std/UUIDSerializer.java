@@ -59,28 +59,26 @@ public class UUIDSerializer
     }
 
     @Override
-        public JsonSerializer<?> createContextual(SerializerProvider serializers,
-                BeanProperty property) throws JsonMappingException
-        {
-            JsonFormat.Value format = findFormatOverrides(serializers,
-                    property, handledType());
-            Boolean asBinary = null;
-    
-            if (format != null) {
-                JsonFormat.Shape shape = format.getShape();
-                if (shape == JsonFormat.Shape.BINARY) {
-                    asBinary = true;
-                } else if (shape == JsonFormat.Shape.STRING) {
-                    asBinary = false;
-                }
-                // otherwise leave as `null` meaning about same as NATURAL
+    public JsonSerializer<?> createContextual(SerializerProvider serializers, BeanProperty property)
+            throws JsonMappingException
+    {
+        JsonFormat.Value format = findFormatOverrides(serializers, property, handledType());
+        Boolean asBinary = null;
+
+        if (format != null) {
+            JsonFormat.Shape shape = format.getShape();
+            if (shape == JsonFormat.Shape.BINARY) {
+                asBinary = true;
+            } else if (shape == JsonFormat.Shape.STRING) {
+                asBinary = false;
             }
-            if (asBinary != this._asBinary && (!Objects.equals(asBinary, _asBinary))) {
-                return new UUIDSerializer(asBinary);
-            }
-            return this;
+            // otherwise leave as `null` meaning about same as NATURAL
         }
-    
+        if (asBinary != this._asBinary && (!Objects.equals(asBinary, _asBinary))) {
+            return new UUIDSerializer(asBinary);
+        }
+        return this;
+    }
 
     @Override
     public void serialize(UUID value, JsonGenerator gen, SerializerProvider provider)
