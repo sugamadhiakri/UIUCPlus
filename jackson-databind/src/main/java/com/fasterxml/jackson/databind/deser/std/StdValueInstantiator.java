@@ -214,8 +214,9 @@ public class StdValueInstantiator
     public boolean canCreateFromBigDecimal() { return _fromBigDecimalCreator != null; }
 
     @Override
-        public boolean canCreateFromBoolean() {
-    return (this._fromBooleanCreator != null);    }
+    public boolean canCreateFromBoolean() {
+        return (this._fromBooleanCreator != null);
+    }
 
     @Override
     public boolean canCreateUsingDefault() {
