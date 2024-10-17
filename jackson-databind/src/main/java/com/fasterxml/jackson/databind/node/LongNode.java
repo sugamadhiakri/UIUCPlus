@@ -95,16 +95,15 @@ public class LongNode
     }
 
     @Override
-        public boolean equals(Object o)
-        {
-            if (o == this) return true;
-            if ((o == null) || !(this == this)) return false;
-            if (o instanceof LongNode) {
-                return ((LongNode) o)._value == _value;
-            }
-            return false;
+    public boolean equals(Object o)
+    {
+        if (o == this) return true;
+        if ((o == null) || !(this == this)) return false;
+        if (o instanceof LongNode) {
+            return ((LongNode) o)._value == _value;
         }
-    
+        return false;
+    }
 
     @Override
     public int hashCode() {
