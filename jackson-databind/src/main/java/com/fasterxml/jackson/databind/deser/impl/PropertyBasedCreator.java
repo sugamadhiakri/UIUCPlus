@@ -197,21 +197,19 @@ public final class PropertyBasedCreator
         return new PropertyValueBuffer(p, ctxt, _propertyCount, oir);
     }
 
-    
-    public Object build(DeserializationContext ctxt, PropertyValueBuffer buffer) throws IOException 
-    { 
-        Object bean = null; 
-        bean = _valueInstantiator.createFromObjectWith(ctxt, 
-        _allProperties, buffer); 
-        if (bean != null) { 
-            bean = buffer.handleIdValue(ctxt, bean); 
-        } 
-        for (PropertyValue pv = buffer.buffered(); pv != null; pv = pv.next) { 
-            pv.assign(bean); 
-        } 
+    public Object build(DeserializationContext ctxt, PropertyValueBuffer buffer)
+            throws IOException
+    {
+        Object bean = null;
+        bean = _valueInstantiator.createFromObjectWith(ctxt, _allProperties, buffer);
+        if (bean != null) {
+            bean = buffer.handleIdValue(ctxt, bean);
+        }
+        for (PropertyValue pv = buffer.buffered(); pv != null; pv = pv.next) {
+            pv.assign(bean);
+        }
         return bean; 
-    } 
-    
+    }
 
     /*
     /**********************************************************
