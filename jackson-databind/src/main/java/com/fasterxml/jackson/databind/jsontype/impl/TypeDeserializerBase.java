@@ -119,11 +119,11 @@ public abstract class TypeDeserializerBase
 
     @Override
     public boolean hasDefaultImpl() {
-    if (_defaultImpl != null) {
-    return true;
-    } else {
-    return false;
-    }
+        if (_defaultImpl != null) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
