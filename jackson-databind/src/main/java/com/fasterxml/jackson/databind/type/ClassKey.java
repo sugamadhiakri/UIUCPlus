@@ -39,7 +39,8 @@ public final class ClassKey
         _hashCode = 0;
     }
 
-    public ClassKey(Class<?> clz) {
+    public ClassKey(Class<?> clz) 
+    {
         _class = clz;
         _className = clz.getName();
         String tempClassName = _className;
